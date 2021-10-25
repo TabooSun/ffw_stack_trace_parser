@@ -6,6 +6,8 @@ version: 1.0.0
 environment:
   sdk: '>=2.14.3 <3.0.0'
 
+executables:
+  ffw_stack_trace_parser:
 
 dependencies:
   path: ^1.8.0
