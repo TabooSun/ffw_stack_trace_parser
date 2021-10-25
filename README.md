@@ -1,16 +1,16 @@
 A simple command-line application for parsing Flutter for Web Stack Trace.
 
-##Installation:
+## Installation:
 ```shell
 dart pub global activate -s git https://github.com/TabooSun/ffw_stack_trace_parser.git
 ```
 
 - You need to reload your shell session after running this.
  
-##Update
+## Update
 - Run the same script to update it.
 
-##Usage:
+## Usage:
 
 - Say that you have an error message in a file (`crash-file.txt`) as such:
 ```text
