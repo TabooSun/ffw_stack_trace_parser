@@ -1,1 +1,1 @@
-A simple command-line application.
+A simple command-line application for parsing Flutter for Web Stack Trace.
