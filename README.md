@@ -1,6 +1,18 @@
 A simple command-line application for parsing Flutter for Web Stack Trace.
 
-Say that you have an error message in a file (`crash-file.txt`) as such:
+##Installation:
+```shell
+dart pub global activate -s git https://github.com/TabooSun/ffw_stack_trace_parser.git
+```
+
+- You need to reload your shell session after running this.
+ 
+##Update
+- Run the same script to update it.
+
+##Usage:
+
+- Say that you have an error message in a file (`crash-file.txt`) as such:
 ```text
 MissingPluginException(No implementation found for method isRealDevice on channel trust_fall)
     at Object.d (http://localhost:30001/main.dart.js:19668:3)
@@ -15,12 +27,12 @@ MissingPluginException(No implementation found for method isRealDevice on channe
     at cna.$0 (http://localhost:30001/main.dart.js:67653:13)
 ```
 
-Run this command:
+- Run this command:
 ```shell
-dart ffw_stack_trace_parser/bin/ffw_stack_trace_parser.dart --source-map main.dart.js.map -i crashes/crash-file.txt
+ffw_stack_trace_parser --source-map build/web/main.dart.js.map -i crash-file.txt
 ```
 
-It will print this:
+- It will print this:
 ```text
 org-dartlang-sdk:///lib/_internal/js_runtime/lib/js_helper.dart 1111:37                              wrapException
 ../../../../../../Development/flutter/packages/flutter/lib/src/services/platform_channel.dart 154:7  MethodChannel._invokeMethod
